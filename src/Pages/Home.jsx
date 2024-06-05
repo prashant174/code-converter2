@@ -1,8 +1,10 @@
 import React, { useContext, useState } from 'react'
 import { AuthContext } from '../context/Authcontext'
 import { CodeInputform } from '../Componants/CodeInputform'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import ResultDisplay from '../Componants/ResultDisplay'
+// import WelcomePage from './WelcomePage'
+import WelcomePageTest from './WelcomePage'
 
 
 const Home = () => {
@@ -22,7 +24,9 @@ const Home = () => {
 
     </>):(
      
-     <p>please login first <Link to="/login" ><span>login</span></Link></p>
+    //  <p>please login first <Link to="/login" ><span>login</span></Link></p>
+  //  <WelcomePage/>
+  <WelcomePageTest/>
 
     )}
    </div>

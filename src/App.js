@@ -8,8 +8,8 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 function App() {
   return (
  <>
- <h1>Code-converter</h1>
- <AuthProvider>
+ 
+<AuthProvider>
 
   <Router>
     <Routes>
