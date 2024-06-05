@@ -1,21 +1,5 @@
-/* div{
-    color: white;
-} */
-#title{
-    text-align: center;
-    border: 1px solid red;
+.acc{
+    color: blue;
     
-}
-
-#parrlelogram{
-    width: 50%;
-    height: auto;
-    background-color: #335f8e26;
-    transform: skew(-20deg);
-    position: relative;
-    margin: 20px;
-    padding: 10px 10px 10px 10px;
-    border-radius: 15px;
-    background-color: #19b30b;
-    /* responsive:true; */
+    
 }
