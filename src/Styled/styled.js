@@ -7,17 +7,18 @@ display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url('https://source.unsplash.com/1600x900/?technology,ai') no-repeat center center/cover;
+  // background: url('https://source.unsplash.com/1600x900/?technology,ai') no-repeat center center/cover;
   color: #58a6ff;
   
 `
 const Form = styled(motion.form)`
-background: rgba(0, 0, 0, 0.8);
+background: rgba(61, 61, 61, 0.264);
 padding: 2rem;
 border-radius: 10px;
-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+box-shadow: 0 0 15px rgba(40, 242, 245, 0.988);
 width: auto;
 text-align: center;
+// align-item:center;
 // border:1px solid red;
 `;
 const Input = styled.input`
@@ -46,6 +47,7 @@ const Button = styled.button`
     background: #0056b3;
   }
 `;
+
 const InputWrapper = styled.div`
   position: relative;
   margin: 10px 0;

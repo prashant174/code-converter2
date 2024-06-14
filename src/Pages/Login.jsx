@@ -7,6 +7,9 @@ import {Hourglass } from 'react-loader-spinner'
 import {Button, Container, Form, Input, InputWrapper, TogglePasswordButton} from '../Styled/styled'
 import { GlobalStyles } from '../Componants/GlobalStyles'
 import { FaEye, FaEyeSlash } from 'react-icons/fa'
+import {  toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+import ParticleBackground from '../Componants/ParticleBackground'
 
 
 
@@ -28,14 +31,17 @@ const Login = () => {
         try {
          
             setLoading(true)
-            const res= await axios.post('https://codeconverter1.onrender.com/login',{email,password})
             
+            const res= await axios.post('https://codeconverter1.onrender.com/login',{email,password})
+            toast(res.data.msg)
           login(res.data)
-       alert(res.data.msg)
+       
           setLoading(false)
                  navigate("/")
         } catch (error) {
-            console.error('Login failed:', error);
+          // toast('invalid credentials from login');
+            console.error('Login failed:', error.message);
+setLoading(false)
         }
     }
 
@@ -43,7 +49,7 @@ const Login = () => {
 
   return (
     <>
-   
+   <ParticleBackground/>
     <GlobalStyles/>
     
     <Container>
